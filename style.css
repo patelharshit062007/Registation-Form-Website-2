@@ -1,0 +1,137 @@
+/* ==========================================
+   1. RESET & BASE STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6c63ff 0%, #3f3d56 100%);
+    padding: 20px;
+}
+
+/* ==========================================
+   2. FORM CONTAINER
+   ========================================== */
+.form-container {
+    background: #ffffff;
+    max-width: 450px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+    color: #333333;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* ==========================================
+   3. FORM GROUPS & SPACING
+   ========================================== */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* ==========================================
+   4. INPUT INPUT BOXES
+   ========================================== */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Focus state for better UX */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+/* ==========================================
+   5. RADIO BUTTONS & GENDER SECTION
+   ========================================== */
+.radio-group-container {
+    margin-bottom: 20px;
+}
+
+.radio-group-container p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.radio-options {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #444444;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    accent-color: #6c63ff;
+    width: 16px;
+    height: 16px;
+}
+
+/* ==========================================
+   6. SUBMIT BUTTON
+   ========================================== */
+.btn-submit {
+    width: 100%;
+    background-color: #6c63ff;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #574bdf;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
